@@ -5,7 +5,7 @@ Getting started
 ```git clone https://github.com/8iBit/Probobot```
 
 2.Navigate to your workspace:
-```cd ~/lab_robot_ws```
+```cd ~/Probobot```
 
 3.Update dependencies:
 ```rosdep update```
@@ -18,10 +18,10 @@ Getting started
 
 #Operating Instructions
 After you build, remember to source the proper install folder...
-```source ~/lab_robot_ws/install/local_setup.bash```
+```source ~/Probobot/install/local_setup.bash```
 
 And then run the launch file...
-```ros2 launch abu_description moveit.launch.py```
+```ros2 launch probobot gazebo.launch.py```
 
 After that run the this file to control robot
-```ros2 run abu_description teleop_twist_keyboard.py``` 
+```ros2 run probobot botcontrol.py``` 
