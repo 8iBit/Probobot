@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.1</authoring_tool>
+    </contributor>
+    <created>2024-03-09T03:37:04</created>
+    <modified>2024-03-09T03:37:04</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_geometries>
+    <geometry id="grip-mesh" name="grip">
+      <mesh>
+        <source id="grip-mesh-positions">
+          <float_array id="grip-mesh-positions-array" count="48">-10 0.003005981 25.00001 9.999999 0.003005981 25.00001 -10 0.003005981 -25 9.999999 0.003005981 -25 -10 -49.99697 25.00001 -10 -49.99697 -25 43.03301 -103.03 25.00001 43.03301 -103.03 -25 73.03301 -103.03 25.00001 73.03301 -103.03 -25 73.03301 -83.02999 25.00001 73.03301 -83.02999 -25 51.31728 -83.02999 25.00001 51.31728 -83.02999 -25 9.999999 -41.7127 25.00001 9.999999 -41.7127 -25</float_array>
+          <technique_common>
+            <accessor source="#grip-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="grip-mesh-normals">
+          <float_array id="grip-mesh-normals-array" count="39">0 1 0 -1 0 0 -0.707107 -0.7071067 0 -0.707107 -0.7071066 0 0 -1 0 1 0 0 0.7071069 0.7071067 0 0.7071068 0.7071068 0 0 0 1 -2.44141e-7 0 1 0 0 1 0 0 -1 2.08912e-7 0 -1</float_array>
+          <technique_common>
+            <accessor source="#grip-mesh-normals-array" count="13" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="grip-mesh-vertices">
+          <input semantic="POSITION" source="#grip-mesh-positions"/>
+        </vertices>
+        <triangles count="28">
+          <input semantic="VERTEX" source="#grip-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#grip-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 2 0 1 0 3 0 4 1 0 1 5 1 5 1 0 1 2 1 6 2 4 2 7 2 7 3 4 3 5 3 8 4 6 4 9 4 9 4 6 4 7 4 10 5 8 5 11 5 11 5 8 5 9 5 12 0 10 0 13 0 13 0 10 0 11 0 14 6 12 6 15 6 15 7 12 7 13 7 1 5 14 5 3 5 3 5 14 5 15 5 1 8 0 8 14 8 14 9 0 9 4 9 14 10 4 10 12 10 12 8 4 8 6 8 12 8 6 8 10 8 10 8 6 8 8 8 11 11 9 11 13 11 13 11 9 11 7 11 13 12 7 12 15 12 15 11 7 11 5 11 15 11 5 11 3 11 3 11 5 11 2 11</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="grip" name="grip" type="NODE">
+        <matrix sid="transform">-4.37114e-11 4.37114e-11 0.001 0 0.001 0 4.37114e-11 0 0 0.001 -4.37114e-11 0 0 0 0 1</matrix>
+        <instance_geometry url="#grip-mesh" name="grip"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="crane_tr" params="">
+        <joint name="crane_joint">
+        <command_interface name="velocity">
+            <param name="min">0.0</param>
+            <param name="max">0.5</param>
+        </command_interface>
+        <state_interface name="position" />
+        <state_interface name="velocity" />
+        </joint>
+    </xacro:macro>
+
+    <xacro:macro name="shafty1_tr" params="">
+        <joint name="shafty1_joint">
+        <command_interface name="velocity">
+            <param name="min">0.0</param>
+            <param name="max">0.01</param>
+        </command_interface>
+        <state_interface name="position" />
+        <state_interface name="velocity" />
+        </joint>
+    </xacro:macro>
+
+    <xacro:macro name="shafty2_tr" params="">
+        <joint name="shafty2_joint">
+        <command_interface name="velocity">
+            <param name="min">0.0</param>
+            <param name="max">0.05</param>
+        </command_interface>
+        <state_interface name="position" />
+        <state_interface name="velocity" />
+        </joint>
+    </xacro:macro>
+
+    <xacro:macro name="shafty3_tr" params="">
+        <joint name="shafty3_joint">
+        <command_interface name="velocity">
+            <param name="min">0.0</param>
+            <param name="max">0.05</param>
+        </command_interface>
+        <state_interface name="position" />
+        <state_interface name="velocity" />
+        </joint>
+    </xacro:macro>
+
+</robot>

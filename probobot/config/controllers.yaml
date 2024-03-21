@@ -1,0 +1,25 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    gripper_controller:
+      type: velocity_controllers/JointGroupVelocityController
+
+# Gripper
+gripper_controller:
+  ros__parameters:
+    joints:
+      - crane_joint
+      - shafty1_joint
+      - shafty2_joint
+      - shafty3_joint
+      - grip_joint
+      - grip_joint_mimic
+    command_interfaces:
+      - velocity
+    state_interfaces:
+      - position
+      - velocity
