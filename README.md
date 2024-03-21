@@ -1,6 +1,6 @@
 # Probobot!!!!!
 ### this project use ros2 distro is humble.
-Getting started
+# Getting started
 
 1.Clone the repo:
 
@@ -32,7 +32,7 @@ rosdep install --ignore-src --from-paths src -y -r
 colcon build
 ```
 
-Operating Instructions
+# Operating Instructions
 
 After you build, remember to source the proper install folder...
 
@@ -48,4 +48,6 @@ ros2 launch probobot gazebo.launch.py
 
 After that run the this file to control robot
 
-```ros2 run probobot botcontrol.py```
+```py
+ros2 run probobot botcontrol.py
+```
