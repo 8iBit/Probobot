@@ -16,7 +16,7 @@ Getting started
 5.Compile
 ```colcon build```
 
-#Operating Instructions
+Operating Instructions
 After you build, remember to source the proper install folder...
 ```source ~/Probobot/install/local_setup.bash```
 
