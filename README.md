@@ -5,7 +5,7 @@ Getting started
 ```git clone https://github.com/8iBit/Probobot```
 
 2.Navigate to your workspace:
-```cd ~/Probobot```
+```cd ~/probobot```
 
 3.Update dependencies:
 ```rosdep update```
@@ -18,7 +18,7 @@ Getting started
 
 Operating Instructions
 After you build, remember to source the proper install folder...
-```source ~/Probobot/install/local_setup.bash```
+```source ~/probobot/install/local_setup.bash```
 
 And then run the launch file...
 ```ros2 launch probobot gazebo.launch.py```
