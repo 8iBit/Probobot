@@ -2,7 +2,7 @@
 ### this project use ros2 distro is humble.
 Getting started
 1.Clone the repo:
-```git clone [https://github.com/Entity014/lab_robot_ws.git](https://github.com/8iBit/Probobot)```
+```git clone https://github.com/8iBit/Probobot```
 
 2.Navigate to your workspace:
 ```cd ~/lab_robot_ws```
