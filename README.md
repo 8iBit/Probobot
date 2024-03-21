@@ -24,4 +24,4 @@ And then run the launch file...
 ```ros2 launch probobot gazebo.launch.py```
 
 After that run the this file to control robot
-```ros2 run probobot botcontrol.py``` 
+```ros2 run probobot botcontrol.py```
